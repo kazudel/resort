@@ -46,6 +46,7 @@ ul li.active a
   float: left;
   width: 250px;
   height: auto;
+  border-radius:14px;
 }
 .title
 {
