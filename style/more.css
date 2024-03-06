@@ -1,0 +1,148 @@
+header{
+  margin:25px;
+  text-align:left;
+  padding:20px;
+}
+.main ul li 
+{
+  list-style-type: none;
+  
+}
+.main ul li a
+{
+  color: aliceblue;
+}
+body
+{ 
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image-file-name/D.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  background-attachment: fixed;
+  
+}
+.heading
+{
+  background-color:rgb(225, 197, 160);
+     height: 72px;
+    text-align: center;
+    padding-top: 0.3em;
+}
+.content ul li 
+{
+  font-size: 15px;
+  text-align:left;
+  list-style-type:none;
+}
+*
+{
+  font-family:'Montserrat',sans-serif;
+  margin:0;padding: 0;
+  box-sizing: border-box;
+  outline: none;border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear; 
+}
+
+.container
+{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 20px;
+}
+.container .heading
+{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.container .box-container
+{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  gap:20px;
+}
+.container .box-container .box
+{
+  background-color:rgb(225, 197, 160);
+  width: 400px;
+}
+.container .box-container .box .image
+{
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .box-container .box .image img
+{
+  height: 226px;
+  width: 250px;
+  object-fit: auto;
+}
+.container .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.container .box-container .box .content h3{
+  font-size: 20px;
+  color:#334;
+}
+
+.container .box-container .box .content p{
+  font-size: 15px;
+  color:#777;
+  line-height: 2;
+  padding:15px 0;
+}
+
+.container .box-container .box .content .icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top:1px solid #334;
+}
+
+.container .box-container .box .content .icons span{
+  font-size: 14px;
+  color:#777;
+}
+
+.container .box-container .box .content .icons span i{
+  color:crimson;
+  padding-right: 5px;
+}
+
+@media (max-width:450px){
+
+  .container .heading{
+    font-size: 25px;
+  }
+
+  .container .box-container{
+    grid-template-columns: 1fr;
+  }
+
+  .container .box-container .box .image{
+    height: 200px;
+  }
+
+  .container .box-container .box .content p{
+    font-size: 12px;
+  }
+
+  .container .box-container .box .content .icons span{
+    font-size: 12px;
+  }
+
+}
+
